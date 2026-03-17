@@ -1,6 +1,6 @@
 <ion-menu contentId="main-content" side="start">
   <ion-content style="--background: white">
-    <div class="flex flex-col h-full bg-white">
+    <div class="flex flex-col h-auto bg-white">
       <div class="px-8 pt-10 pb-6 flex items-center justify-between">
         <div class="flex items-center gap-2">
           <img src="assets/logo.svg" class="w-10 h-10" alt="Logo" />
@@ -23,7 +23,10 @@
       <div class="flex-1 px-8 pt-4">
         <div class="space-y-0">
           <ion-menu-toggle auto-hide="true">
-            <div class="py-6 border-b border-primary/10 group cursor-pointer">
+            <div
+              (click)="scrollToSection('about')"
+              class="py-6 border-b border-primary/10 group cursor-pointer"
+            >
               <span
                 class="text-xl font-bold text-primary opacity-80 group-hover:opacity-100 transition-opacity"
                 >За Граматик</span
@@ -32,7 +35,10 @@
           </ion-menu-toggle>
 
           <ion-menu-toggle auto-hide="true">
-            <div class="py-6 border-b border-primary/10 group cursor-pointer">
+            <div
+              (click)="scrollToSection('pricing')"
+              class="py-6 border-b border-primary/10 group cursor-pointer"
+            >
               <span
                 class="text-xl font-bold text-primary opacity-80 group-hover:opacity-100 transition-opacity"
                 >Абонаментни планове</span
@@ -41,7 +47,10 @@
           </ion-menu-toggle>
 
           <ion-menu-toggle auto-hide="true">
-            <div class="py-6 border-b border-primary/10 group cursor-pointer">
+            <div
+              (click)="scrollToSection('contact')"
+              class="py-6 border-b border-primary/10 group cursor-pointer"
+            >
               <span
                 class="text-xl font-bold text-primary opacity-80 group-hover:opacity-100 transition-opacity"
                 >Контакти</span
@@ -119,14 +128,17 @@
 
         <div class="hidden lg:flex items-center gap-10">
           <span
+            (click)="scrollToSection('about')"
             class="text-sm font-bold text-primary hover:opacity-80 cursor-pointer transition-opacity"
             >За Граматик</span
           >
           <span
+            (click)="scrollToSection('pricing')"
             class="text-sm font-bold text-gray-400 hover:text-primary cursor-pointer transition-colors"
             >Абонаментни планове</span
           >
           <span
+            (click)="scrollToSection('contact')"
             class="text-sm font-bold text-gray-400 hover:text-primary cursor-pointer transition-colors"
             >Контакти</span
           >
@@ -149,9 +161,11 @@
               class="text-primary text-xl"
             ></ion-icon>
           </div>
-          <ion-buttons slot="end" class="lg:hidden">
-            <ion-menu-button class="text-primary"></ion-menu-button>
-          </ion-buttons>
+          <div class="menu-button-container">
+            <ion-buttons slot="end" class="lg:hidden">
+              <ion-menu-button class="text-primary"></ion-menu-button>
+            </ion-buttons>
+          </div>
         </div>
       </div>
     </ion-toolbar>
@@ -163,6 +177,7 @@
     style="--background: var(--color-secondary)"
   >
     <div
+      id="about"
       class="px-6 py-12 md:py-24 flex flex-col md:flex-row items-center gap-12"
     >
       <div class="flex-1 text-center md:text-left">
@@ -234,7 +249,10 @@
       </div>
     </div>
 
-    <div class="py-20 bg-white/40 backdrop-blur-sm rounded-t-[5rem]">
+    <div
+      id="pricing"
+      class="py-20 bg-white/40 backdrop-blur-sm rounded-t-[5rem]"
+    >
       <div class="px-6 flex flex-col items-center">
         <div class="flex flex-col items-center gap-2 mb-12 text-center">
           <img
@@ -271,9 +289,9 @@
             (scroll)="onSliderScroll($event)"
             class="pricing-slider flex md:grid md:grid-cols-2 gap-6 md:gap-10 overflow-x-auto md:overflow-x-visible pb-10 md:pb-0 snap-x snap-mandatory no-scrollbar"
           >
-            <div class="min-w-[85%] md:min-w-0 snap-center h-full">
+            <div class="min-w-[85%] md:min-w-0 snap-center h-auto">
               <div
-                class="bg-white/80 border border-primary/10 p-10 rounded-[3rem] h-full flex flex-col hover:shadow-2xl transition-all group backdrop-blur-md relative overflow-hidden"
+                class="bg-white/80 border border-primary/10 p-10 rounded-[3rem] h-auto flex flex-col hover:shadow-2xl transition-all group backdrop-blur-md relative overflow-hidden"
               >
                 <div class="absolute top-0 right-0 p-8">
                   <img
@@ -334,9 +352,9 @@
               </div>
             </div>
 
-            <div class="min-w-[85%] md:min-w-0 snap-center h-full">
+            <div class="min-w-[85%] md:min-w-0 snap-center h-auto">
               <div
-                class="bg-white/80 border border-primary/10 p-10 rounded-[3rem] h-full flex flex-col hover:shadow-2xl transition-all group backdrop-blur-md relative overflow-hidden"
+                class="bg-white/80 border border-primary/10 p-10 rounded-[3rem] h-auto flex flex-col hover:shadow-2xl transition-all group backdrop-blur-md relative overflow-hidden"
               >
                 <div class="absolute top-0 right-0 p-8">
                   <img
@@ -412,7 +430,7 @@
       </div>
     </div>
 
-    <div class="py-28 px-6">
+    <div id="contact" class="py-28 px-6">
       <div class="flex flex-col items-center gap-2 mb-16 text-center">
         <img
           src="assets/logo.svg"
@@ -539,7 +557,7 @@
 
     <footer class="bg-bg-footer/50 backdrop-blur-md pt-16 pb-8 mt-16">
       <div
-        class="px-6 grid grid-cols-1 md:grid-cols-4 gap-16 border-b border-primary/5 pb-12 max-w-6xl mx-auto"
+        class="px-6 grid grid-cols-1 md:grid-cols-3 gap-16 border-b border-primary/5 pb-12 max-w-6xl mx-auto"
       >
         <div class="space-y-6">
           <div class="flex flex-col gap-4">
@@ -601,10 +619,16 @@
             <div class="w-6 h-[2px] bg-primary/20"></div>
           </h4>
           <ul class="space-y-4 text-[13px] font-bold text-gray-500">
-            <li class="hover:text-primary cursor-pointer transition-colors">
+            <li
+              (click)="scrollToSection('about')"
+              class="hover:text-primary cursor-pointer transition-colors"
+            >
               За Граматик
             </li>
-            <li class="hover:text-primary cursor-pointer transition-colors">
+            <li
+              (click)="scrollToSection('pricing')"
+              class="hover:text-primary cursor-pointer transition-colors"
+            >
               Абонаментни планове
             </li>
             <li class="hover:text-primary cursor-pointer transition-colors">
@@ -653,7 +677,7 @@
         </div>
 
         <div
-          class="flex flex-col items-center md:items-end justify-between py-2"
+          class="flex flex-col items-center md:items-end justify-end py-2"
         >
           <div class="flex gap-5">
             <ion-icon
@@ -676,9 +700,9 @@
         </div>
       </div>
       <div
-        class="px-6 py-10 text-center text-[10px] text-gray-400 uppercase tracking-[0.4em] font-bold"
+        class="px-6 py-4 text-center text-[11px] text-gray-500 font-medium"
       >
-        © 2024 ГРАМАТИК. ВСИЧКИ ПРАВА ЗАПАЗЕНИ.
+        Изработено от Evolution of Dreams
       </div>
     </footer>
   </ion-content>

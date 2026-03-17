@@ -35,3 +35,9 @@ ion-item {
 .font-cursive {
   font-family: 'Dancing Script', cursive;
 }
+
+@media (min-width: 1014px) {
+  .menu-button-container {
+    display: none !important;
+  }
+}

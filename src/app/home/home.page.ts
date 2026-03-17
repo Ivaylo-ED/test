@@ -73,4 +73,11 @@ export class HomePage {
     const width = event.target.clientWidth;
     this.activeSlideIndex = Math.round(scrollLeft / width);
   }
+
+  scrollToSection(id: string) {
+    const element = document.getElementById(id);
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+  }
 }

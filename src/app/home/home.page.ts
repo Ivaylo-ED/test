@@ -29,8 +29,11 @@ import {
   logoTwitter,
   logoFacebook,
   logoYoutube,
+  sendOutline,
+  logoInstagram,
+  menuOutline,
+  closeOutline
 } from 'ionicons/icons';
-
 
 @Component({
   selector: 'app-home',
@@ -52,6 +55,8 @@ import {
   ],
 })
 export class HomePage {
+  selectedPlan: 'business' | 'students' = 'business';
+
   constructor() {
     addIcons({
       businessOutline,
@@ -69,6 +74,14 @@ export class HomePage {
       logoTwitter,
       logoFacebook,
       logoYoutube,
+      sendOutline,
+      logoInstagram,
+      menuOutline,
+      closeOutline
     });
+  }
+
+  setPlan(plan: 'business' | 'students') {
+    this.selectedPlan = plan;
   }
 }

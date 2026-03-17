@@ -1,3 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap');
+
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+.pricing-slider {
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
+}
+
 ion-content {
   --background: transparent;
 }
@@ -15,16 +30,8 @@ ion-item {
 
 .subscription-segment {
   --background: transparent;
-  
-  ion-segment-button {
-    --background: transparent;
-    --color: #D28B88;
-    --border-radius: 9999px;
-
-    &.segment-button-checked {
-      --background: #D28B88;
-      --color: white;
-    }
-  }
 }
 
+.font-cursive {
+  font-family: 'Dancing Script', cursive;
+}

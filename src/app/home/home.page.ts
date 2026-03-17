@@ -4,8 +4,6 @@ import {
   IonToolbar,
   IonContent,
   IonMenu,
-  IonList,
-  IonItem,
   IonMenuToggle,
   IonButtons,
   IonMenuButton,
@@ -14,24 +12,17 @@ import {
 import { CommonModule } from '@angular/common';
 import { addIcons } from 'ionicons';
 import {
-  businessOutline,
-  schoolOutline,
   informationCircleOutline,
   pricetagsOutline,
   callOutline,
   logoGooglePlaystore,
   logoApple,
-  checkmarkCircle,
-  mapOutline,
   locationOutline,
   mailOutline,
-  logoLinkedin,
   logoTwitter,
   logoFacebook,
   logoYoutube,
-  sendOutline,
   logoInstagram,
-  menuOutline,
   closeOutline
 } from 'ionicons/icons';
 
@@ -46,8 +37,6 @@ import {
     IonToolbar,
     IonContent,
     IonMenu,
-    IonList,
-    IonItem,
     IonMenuToggle,
     IonButtons,
     IonMenuButton,
@@ -56,32 +45,32 @@ import {
 })
 export class HomePage {
   selectedPlan: 'business' | 'students' = 'business';
+  activeSlideIndex = 0;
 
   constructor() {
     addIcons({
-      businessOutline,
-      schoolOutline,
       informationCircleOutline,
       pricetagsOutline,
       callOutline,
       logoGooglePlaystore,
       logoApple,
-      checkmarkCircle,
-      mapOutline,
       locationOutline,
       mailOutline,
-      logoLinkedin,
       logoTwitter,
       logoFacebook,
       logoYoutube,
-      sendOutline,
       logoInstagram,
-      menuOutline,
       closeOutline
     });
   }
 
   setPlan(plan: 'business' | 'students') {
     this.selectedPlan = plan;
+  }
+
+  onSliderScroll(event: any) {
+    const scrollLeft = event.target.scrollLeft;
+    const width = event.target.clientWidth;
+    this.activeSlideIndex = Math.round(scrollLeft / width);
   }
 }

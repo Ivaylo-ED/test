@@ -1,14 +1,21 @@
 <ion-menu contentId="main-content" side="start">
-  <ion-content style="--background: white;">
+  <ion-content style="--background: white">
     <div class="flex flex-col h-full bg-white">
       <div class="px-8 pt-10 pb-6 flex items-center justify-between">
         <div class="flex items-center gap-2">
           <img src="assets/logo.svg" class="w-10 h-10" alt="Logo" />
-          <h2 class="m-0 font-bold text-2xl text-primary font-cursive">Граматик</h2>
+          <h2 class="m-0 font-bold text-2xl text-primary font-cursive">
+            Граматик
+          </h2>
         </div>
         <ion-menu-toggle>
-          <div class="p-2 -mr-2 cursor-pointer transition-transform active:scale-90">
-            <ion-icon name="close-outline" class="text-[#D28B88] text-4xl"></ion-icon>
+          <div
+            class="p-2 -mr-2 cursor-pointer transition-transform active:scale-90"
+          >
+            <ion-icon
+              name="close-outline"
+              class="text-[#D28B88] text-4xl"
+            ></ion-icon>
           </div>
         </ion-menu-toggle>
       </div>
@@ -17,19 +24,28 @@
         <div class="space-y-0">
           <ion-menu-toggle auto-hide="true">
             <div class="py-6 border-b border-primary/10 group cursor-pointer">
-              <span class="text-xl font-bold text-primary opacity-80 group-hover:opacity-100 transition-opacity">За Граматик</span>
+              <span
+                class="text-xl font-bold text-primary opacity-80 group-hover:opacity-100 transition-opacity"
+                >За Граматик</span
+              >
             </div>
           </ion-menu-toggle>
 
           <ion-menu-toggle auto-hide="true">
             <div class="py-6 border-b border-primary/10 group cursor-pointer">
-              <span class="text-xl font-bold text-primary opacity-80 group-hover:opacity-100 transition-opacity">Абонаментни планове</span>
+              <span
+                class="text-xl font-bold text-primary opacity-80 group-hover:opacity-100 transition-opacity"
+                >Абонаментни планове</span
+              >
             </div>
           </ion-menu-toggle>
 
           <ion-menu-toggle auto-hide="true">
             <div class="py-6 border-b border-primary/10 group cursor-pointer">
-              <span class="text-xl font-bold text-primary opacity-80 group-hover:opacity-100 transition-opacity">Контакти</span>
+              <span
+                class="text-xl font-bold text-primary opacity-80 group-hover:opacity-100 transition-opacity"
+                >Контакти</span
+              >
             </div>
           </ion-menu-toggle>
         </div>
@@ -38,24 +54,47 @@
       <div class="px-8 pb-12 space-y-8">
         <div class="space-y-4">
           <div class="flex items-center gap-4 text-gray-600">
-            <ion-icon name="location-outline" class="text-primary text-2xl"></ion-icon>
+            <ion-icon
+              name="location-outline"
+              class="text-primary text-2xl"
+            ></ion-icon>
             <span class="text-sm font-bold opacity-80">София, България</span>
           </div>
           <div class="flex items-center gap-4 text-gray-600">
-            <ion-icon name="call-outline" class="text-primary text-2xl"></ion-icon>
+            <ion-icon
+              name="call-outline"
+              class="text-primary text-2xl"
+            ></ion-icon>
             <span class="text-sm font-bold opacity-80">0877354739</span>
           </div>
           <div class="flex items-center gap-4 text-gray-600">
-            <ion-icon name="mail-outline" class="text-primary text-2xl"></ion-icon>
-            <span class="text-sm font-bold opacity-80">office@gramatic.com</span>
+            <ion-icon
+              name="mail-outline"
+              class="text-primary text-2xl"
+            ></ion-icon>
+            <span class="text-sm font-bold opacity-80"
+              >office@gramatic.com</span
+            >
           </div>
         </div>
 
         <div class="flex gap-6 -ml-1">
-          <ion-icon name="logo-instagram" class="text-2xl text-gray-400 hover:text-primary transition-all"></ion-icon>
-          <ion-icon name="logo-twitter" class="text-2xl text-gray-400 hover:text-primary transition-all"></ion-icon>
-          <ion-icon name="logo-facebook" class="text-2xl text-gray-400 hover:text-primary transition-all"></ion-icon>
-          <ion-icon name="logo-youtube" class="text-2xl text-gray-400 hover:text-primary transition-all"></ion-icon>
+          <ion-icon
+            name="logo-instagram"
+            class="text-2xl text-gray-400 hover:text-primary transition-all"
+          ></ion-icon>
+          <ion-icon
+            name="logo-twitter"
+            class="text-2xl text-gray-400 hover:text-primary transition-all"
+          ></ion-icon>
+          <ion-icon
+            name="logo-facebook"
+            class="text-2xl text-gray-400 hover:text-primary transition-all"
+          ></ion-icon>
+          <ion-icon
+            name="logo-youtube"
+            class="text-2xl text-gray-400 hover:text-primary transition-all"
+          ></ion-icon>
         </div>
       </div>
     </div>
@@ -64,24 +103,51 @@
 
 <div id="main-content">
   <ion-header class="ion-no-border">
-    <ion-toolbar style="--background: var(--color-secondary); --padding-start: 1.5rem; --padding-end: 1.5rem; --padding-top: 1.5rem; --padding-bottom: 0.5rem;">
+    <ion-toolbar
+      style="
+        --background: var(--color-secondary);
+        --padding-start: 1.5rem;
+        --padding-end: 1.5rem;
+        --padding-top: 1.5rem;
+        --padding-bottom: 0.5rem;
+      "
+    >
       <div class="flex items-center justify-between w-full">
         <div class="flex items-center gap-2">
           <img src="assets/logo.svg" class="w-10 h-10" alt="Logo" />
         </div>
 
         <div class="hidden lg:flex items-center gap-10">
-          <span class="text-sm font-bold text-primary hover:opacity-80 cursor-pointer transition-opacity">За Граматик</span>
-          <span class="text-sm font-bold text-gray-400 hover:text-primary cursor-pointer transition-colors">Абонаментни планове</span>
-          <span class="text-sm font-bold text-gray-400 hover:text-primary cursor-pointer transition-colors">Контакти</span>
+          <span
+            class="text-sm font-bold text-primary hover:opacity-80 cursor-pointer transition-opacity"
+            >За Граматик</span
+          >
+          <span
+            class="text-sm font-bold text-gray-400 hover:text-primary cursor-pointer transition-colors"
+            >Абонаментни планове</span
+          >
+          <span
+            class="text-sm font-bold text-gray-400 hover:text-primary cursor-pointer transition-colors"
+            >Контакти</span
+          >
         </div>
-        
+
         <div class="flex items-center gap-4">
-          <div class="hidden md:flex items-center justify-center w-10 h-10 rounded-full bg-primary/5 hover:bg-primary/10 transition-colors cursor-pointer">
-            <ion-icon name="mail-outline" class="text-primary text-xl"></ion-icon>
+          <div
+            class="hidden md:flex items-center justify-center w-10 h-10 rounded-full bg-primary/5 hover:bg-primary/10 transition-colors cursor-pointer"
+          >
+            <ion-icon
+              name="mail-outline"
+              class="text-primary text-xl"
+            ></ion-icon>
           </div>
-          <div class="hidden md:flex items-center justify-center w-10 h-10 rounded-full bg-primary/5 hover:bg-primary/10 transition-colors cursor-pointer">
-            <ion-icon name="call-outline" class="text-primary text-xl"></ion-icon>
+          <div
+            class="hidden md:flex items-center justify-center w-10 h-10 rounded-full bg-primary/5 hover:bg-primary/10 transition-colors cursor-pointer"
+          >
+            <ion-icon
+              name="call-outline"
+              class="text-primary text-xl"
+            ></ion-icon>
           </div>
           <ion-buttons slot="end" class="lg:hidden">
             <ion-menu-button class="text-primary"></ion-menu-button>
@@ -91,45 +157,78 @@
     </ion-toolbar>
   </ion-header>
 
-  <ion-content [fullscreen]="true" [scrollEvents]="true" style="--background: var(--color-secondary)">
-    <div class="px-6 py-12 md:py-24 flex flex-col md:flex-row items-center gap-12">
+  <ion-content
+    [fullscreen]="true"
+    [scrollEvents]="true"
+    style="--background: var(--color-secondary)"
+  >
+    <div
+      class="px-6 py-12 md:py-24 flex flex-col md:flex-row items-center gap-12"
+    >
       <div class="flex-1 text-center md:text-left">
         <div class="flex justify-center md:justify-start mb-6">
-          <img src="assets/logo.svg" class="w-24 h-24 md:w-32 md:h-32" alt="Logo Large" />
+          <img
+            src="assets/logo.svg"
+            class="w-24 h-24 md:w-32 md:h-32"
+            alt="Logo Large"
+          />
         </div>
-        <h1 class="text-4xl md:text-5xl font-bold text-primary mb-8 px-4 md:px-0">За Граматик</h1>
+        <h1
+          class="text-4xl md:text-5xl font-bold text-primary mb-8 px-4 md:px-0"
+        >
+          За Граматик
+        </h1>
         <div class="space-y-6 max-w-xl mx-auto md:mx-0">
           <p class="text-gray-700 text-base md:text-lg leading-relaxed">
-            Граматик е приложение, което автоматично открива и поправя правописни, граматични и стилистични грешки в реално време.
+            Граматик е приложение, което автоматично открива и поправя
+            правописни, граматични и стилистични грешки в реално време.
           </p>
           <p class="text-gray-700 text-base md:text-lg leading-relaxed">
-            Независимо дали пишеш имейл, публикация или важен документ — ние се грижим текстът ти да бъде ясен, точен и професионален.
+            Независимо дали пишеш имейл, публикация или важен документ — ние се
+            грижим текстът ти да бъде ясен, точен и професионален.
           </p>
         </div>
-        
+
         <div class="mt-12">
-          <p class="text-[10px] uppercase font-bold text-gray-400 mb-4 tracking-[0.2em]">Свалете приложението от:</p>
+          <p
+            class="text-[10px] uppercase font-bold text-gray-400 mb-4 tracking-[0.2em]"
+          >
+            Свалете приложението от:
+          </p>
           <div class="flex flex-wrap justify-center md:justify-start gap-4">
-            <button class="bg-black text-white px-6 py-3 rounded-xl flex items-center gap-3 hover:opacity-80 transition-all active:scale-95 shadow-lg shadow-black/10">
-              <ion-icon name="logo-google-playstore" class="text-2xl"></ion-icon>
+            <button
+              class="bg-black text-white px-6 py-3 rounded-xl flex items-center gap-3 hover:opacity-80 transition-all active:scale-95 shadow-lg shadow-black/10"
+            >
+              <ion-icon
+                name="logo-google-playstore"
+                class="text-2xl"
+              ></ion-icon>
               <div class="text-left">
-                <div class="text-[8px] uppercase leading-none opacity-60">Get it on</div>
+                <div class="text-[8px] uppercase leading-none opacity-60">
+                  Get it on
+                </div>
                 <div class="text-sm font-bold leading-none">Google Play</div>
               </div>
             </button>
-            <button class="bg-black text-white px-6 py-3 rounded-xl flex items-center gap-3 hover:opacity-80 transition-all active:scale-95 shadow-lg shadow-black/10">
+            <button
+              class="bg-black text-white px-6 py-3 rounded-xl flex items-center gap-3 hover:opacity-80 transition-all active:scale-95 shadow-lg shadow-black/10"
+            >
               <ion-icon name="logo-apple" class="text-2xl"></ion-icon>
               <div class="text-left">
-                <div class="text-[8px] uppercase leading-none opacity-60">Download on the</div>
+                <div class="text-[8px] uppercase leading-none opacity-60">
+                  Download on the
+                </div>
                 <div class="text-sm font-bold leading-none">App Store</div>
               </div>
             </button>
           </div>
         </div>
       </div>
-      
+
       <div class="flex-1 w-full max-w-md md:max-w-none px-4">
-        <div class="relative rounded-[2.5rem] overflow-hidden shadow-2xl transition-all duration-500 hover:shadow-primary/30">
+        <div
+          class="relative rounded-[2.5rem] overflow-hidden shadow-2xl transition-all duration-500 hover:shadow-primary/30"
+        >
           <img src="assets/hero1.png" alt="Working" class="w-full h-auto" />
         </div>
       </div>
@@ -138,90 +237,176 @@
     <div class="py-20 bg-white/40 backdrop-blur-sm rounded-t-[5rem]">
       <div class="px-6 flex flex-col items-center">
         <div class="flex flex-col items-center gap-2 mb-12 text-center">
-          <img src="assets/logo.svg" class="w-16 h-10 opacity-30 mb-2" alt="Bird Logo" />
-          <h2 class="text-3xl md:text-4xl font-bold text-primary">Абонаментни планове</h2>
+          <img
+            src="assets/logo.svg"
+            class="w-16 h-10 opacity-30 mb-2"
+            alt="Bird Logo"
+          />
+          <h2 class="text-3xl md:text-4xl font-bold text-primary">
+            Абонаментни планове
+          </h2>
         </div>
 
-        <div class="bg-white/60 p-1.5 rounded-full shadow-xl flex mb-16 max-w-xs w-full backdrop-blur-md border border-primary/5">
-          <button 
+        <div
+          class="bg-white/60 p-1.5 rounded-full shadow-xl flex mb-16 max-w-xs w-full backdrop-blur-md border border-primary/5"
+        >
+          <button
             (click)="setPlan('business')"
             class="flex-1 py-4 px-6 rounded-full text-sm font-bold transition-all"
             [ngClass]="selectedPlan === 'business' ? 'bg-primary text-white shadow-lg' : 'text-gray-400 hover:text-primary/70'"
-          >За бизнеса</button>
-          <button 
+          >
+            За бизнеса
+          </button>
+          <button
             (click)="setPlan('students')"
             class="flex-1 py-4 px-6 rounded-full text-sm font-bold transition-all"
             [ngClass]="selectedPlan === 'students' ? 'bg-primary text-white shadow-lg' : 'text-gray-400 hover:text-primary/70'"
-          >За учащи</button>
+          >
+            За учащи
+          </button>
         </div>
 
         <div class="w-full md:max-w-4xl px-4">
-          <div class="pricing-slider flex md:grid md:grid-cols-2 gap-6 md:gap-10 overflow-x-auto md:overflow-x-visible pb-10 md:pb-0 snap-x snap-mandatory no-scrollbar">
-            <div class="min-w-[85%] md:min-w-0 snap-center">
-              <div class="bg-white/80 border border-primary/10 p-10 rounded-[3rem] h-full flex flex-col hover:shadow-2xl transition-all group backdrop-blur-md relative overflow-hidden">
+          <div
+            (scroll)="onSliderScroll($event)"
+            class="pricing-slider flex md:grid md:grid-cols-2 gap-6 md:gap-10 overflow-x-auto md:overflow-x-visible pb-10 md:pb-0 snap-x snap-mandatory no-scrollbar"
+          >
+            <div class="min-w-[85%] md:min-w-0 snap-center h-full">
+              <div
+                class="bg-white/80 border border-primary/10 p-10 rounded-[3rem] h-full flex flex-col hover:shadow-2xl transition-all group backdrop-blur-md relative overflow-hidden"
+              >
                 <div class="absolute top-0 right-0 p-8">
-                  <img src="assets/logo.svg" class="w-10 h-7 opacity-20 group-hover:opacity-100 transition-opacity" alt="Bird" />
+                  <img
+                    src="assets/logo.svg"
+                    class="w-10 h-7 opacity-20 group-hover:opacity-100 transition-opacity"
+                    alt="Bird"
+                  />
                 </div>
-                <h3 class="text-2xl font-bold text-primary mb-8 px-2">Абонаметен план 1</h3>
-                <p class="font-bold text-gray-700 mb-6 px-2 text-sm italic opacity-70">Основни функции:</p>
+                <h3 class="text-2xl font-bold text-primary mb-8 px-2">
+                  Абонаметен план 1
+                </h3>
+                <p
+                  class="font-bold text-gray-700 mb-6 px-2 text-sm italic opacity-70"
+                >
+                  Основни функции:
+                </p>
                 <ul class="space-y-5 text-[13px] text-gray-600 mb-12 px-2">
                   <li class="flex items-start gap-4">
-                    <div class="w-1.5 h-1.5 rounded-full bg-primary mt-2 shrink-0"></div>
+                    <div
+                      class="w-1.5 h-1.5 rounded-full bg-primary mt-2 shrink-0"
+                    ></div>
                     <span>Автоматична проверка на правописа</span>
                   </li>
                   <li class="flex items-start gap-4">
-                    <div class="w-1.5 h-1.5 rounded-full bg-primary mt-2 shrink-0"></div>
+                    <div
+                      class="w-1.5 h-1.5 rounded-full bg-primary mt-2 shrink-0"
+                    ></div>
                     <span>Граматични корекции</span>
                   </li>
                   <li class="flex items-start gap-4">
-                    <div class="w-1.5 h-1.5 rounded-full bg-primary mt-2 shrink-0"></div>
+                    <div
+                      class="w-1.5 h-1.5 rounded-full bg-primary mt-2 shrink-0"
+                    ></div>
                     <span>Стилови предложения</span>
                   </li>
                   <li class="flex items-start gap-4">
-                    <div class="w-1.5 h-1.5 rounded-full bg-primary mt-2 shrink-0"></div>
+                    <div
+                      class="w-1.5 h-1.5 rounded-full bg-primary mt-2 shrink-0"
+                    ></div>
                     <span>Поддръжка на български език</span>
                   </li>
                 </ul>
-                <div class="mt-auto text-center border-t border-primary/5 pt-10">
-                  <div class="text-primary font-bold text-2xl mb-1">5.11€ (9.99лв)</div>
-                  <div class="text-gray-300 text-[10px] line-through mb-8">6.64€ (12.99лв)/месец</div>
-                  <button class="w-full bg-primary text-white py-5 rounded-2xl font-bold transition-all shadow-xl shadow-primary/20 active:scale-95 hover:brightness-110">14-дневен пробен период</button>
+                <div
+                  class="mt-auto text-center border-t border-primary/5 pt-10"
+                >
+                  <div class="text-primary font-bold text-2xl mb-1">
+                    5.11€ (9.99лв)
+                  </div>
+                  <div class="text-gray-300 text-[10px] line-through mb-8">
+                    6.64€ (12.99лв)/месец
+                  </div>
+                  <button
+                    class="w-full bg-primary text-white py-5 rounded-2xl font-bold transition-all shadow-xl shadow-primary/20 active:scale-95 hover:brightness-110"
+                  >
+                    14-дневен пробен период
+                  </button>
                 </div>
               </div>
             </div>
 
-            <div class="min-w-[85%] md:min-w-0 snap-center">
-              <div class="bg-white/80 border border-primary/10 p-10 rounded-[3rem] h-full flex flex-col hover:shadow-2xl transition-all group backdrop-blur-md relative overflow-hidden">
+            <div class="min-w-[85%] md:min-w-0 snap-center h-full">
+              <div
+                class="bg-white/80 border border-primary/10 p-10 rounded-[3rem] h-full flex flex-col hover:shadow-2xl transition-all group backdrop-blur-md relative overflow-hidden"
+              >
                 <div class="absolute top-0 right-0 p-8">
-                  <img src="assets/logo.svg" class="w-10 h-7 opacity-20 group-hover:opacity-100 transition-opacity" alt="Bird" />
+                  <img
+                    src="assets/logo.svg"
+                    class="w-10 h-7 opacity-20 group-hover:opacity-100 transition-opacity"
+                    alt="Bird"
+                  />
                 </div>
-                <h3 class="text-2xl font-bold text-primary mb-8 px-2">Абонаметен план 2</h3>
-                <p class="font-bold text-gray-700 mb-6 px-2 text-sm italic opacity-70">Основни функции:</p>
+                <h3 class="text-2xl font-bold text-primary mb-8 px-2">
+                  Абонаметен план 2
+                </h3>
+                <p
+                  class="font-bold text-gray-700 mb-6 px-2 text-sm italic opacity-70"
+                >
+                  Основни функции:
+                </p>
                 <ul class="space-y-5 text-[13px] text-gray-600 mb-12 px-2">
                   <li class="flex items-start gap-4">
-                    <div class="w-1.5 h-1.5 rounded-full bg-primary mt-2 shrink-0"></div>
+                    <div
+                      class="w-1.5 h-1.5 rounded-full bg-primary mt-2 shrink-0"
+                    ></div>
                     <span>Автоматична проверка на правописа</span>
                   </li>
                   <li class="flex items-start gap-4">
-                    <div class="w-1.5 h-1.5 rounded-full bg-primary mt-2 shrink-0"></div>
+                    <div
+                      class="w-1.5 h-1.5 rounded-full bg-primary mt-2 shrink-0"
+                    ></div>
                     <span>Граматични корекции</span>
                   </li>
                   <li class="flex items-start gap-4">
-                    <div class="w-1.5 h-1.5 rounded-full bg-primary mt-2 shrink-0"></div>
+                    <div
+                      class="w-1.5 h-1.5 rounded-full bg-primary mt-2 shrink-0"
+                    ></div>
                     <span>Стилови предложения</span>
                   </li>
                   <li class="flex items-start gap-4">
-                    <div class="w-1.5 h-1.5 rounded-full bg-primary mt-2 shrink-0"></div>
+                    <div
+                      class="w-1.5 h-1.5 rounded-full bg-primary mt-2 shrink-0"
+                    ></div>
                     <span>Пълна интеграция в браузър</span>
                   </li>
                 </ul>
-                <div class="mt-auto text-center border-t border-primary/5 pt-10">
-                  <div class="text-primary font-bold text-2xl mb-1">6.64€ (12.99лв)</div>
-                  <div class="text-gray-300 text-[10px] line-through mb-8">10.00€ (19.99лв)/месец</div>
-                  <button class="w-full bg-primary text-white py-5 rounded-2xl font-bold transition-all shadow-xl shadow-primary/20 active:scale-95 hover:brightness-110">14-дневен пробен период</button>
+                <div
+                  class="mt-auto text-center border-t border-primary/5 pt-10"
+                >
+                  <div class="text-primary font-bold text-2xl mb-1">
+                    6.64€ (12.99лв)
+                  </div>
+                  <div class="text-gray-300 text-[10px] line-through mb-8">
+                    10.00€ (19.99лв)/месец
+                  </div>
+                  <button
+                    class="w-full bg-primary text-white py-5 rounded-2xl font-bold transition-all shadow-xl shadow-primary/20 active:scale-95 hover:brightness-110"
+                  >
+                    14-дневен пробен период
+                  </button>
                 </div>
               </div>
             </div>
+          </div>
+
+          <div class="flex justify-center gap-2 mt-4 md:hidden">
+            <div
+              class="w-2 h-2 rounded-full transition-all duration-300"
+              [ngClass]="activeSlideIndex === 0 ? 'bg-primary w-4' : 'bg-primary/20'"
+            ></div>
+            <div
+              class="w-2 h-2 rounded-full transition-all duration-300"
+              [ngClass]="activeSlideIndex === 1 ? 'bg-primary w-4' : 'bg-primary/20'"
+            ></div>
           </div>
         </div>
       </div>
@@ -229,90 +414,181 @@
 
     <div class="py-28 px-6">
       <div class="flex flex-col items-center gap-2 mb-16 text-center">
-        <img src="assets/logo.svg" class="w-16 h-10 opacity-30 mb-2" alt="Bird Logo" />
-        <h2 class="text-3xl md:text-5xl font-bold text-primary">Свържете се с нас</h2>
+        <img
+          src="assets/logo.svg"
+          class="w-16 h-10 opacity-30 mb-2"
+          alt="Bird Logo"
+        />
+        <h2 class="text-3xl md:text-5xl font-bold text-primary">
+          Свържете се с нас
+        </h2>
       </div>
 
       <div class="flex flex-col md:flex-row gap-20 max-w-6xl mx-auto">
         <div class="flex-1 space-y-6">
-          <input type="text" placeholder="Име" class="w-full bg-primary/5 border border-primary/10 rounded-[1.5rem] p-6 placeholder:text-gray-400 focus:ring-4 ring-primary/10 outline-none transition-all" />
-          <input type="email" placeholder="Имейл адрес" class="w-full bg-primary/5 border border-primary/10 rounded-[1.5rem] p-6 placeholder:text-gray-400 focus:ring-4 ring-primary/10 outline-none transition-all" />
-          <input type="tel" placeholder="Тел. номер" class="w-full bg-primary/5 border border-primary/10 rounded-[1.5rem] p-6 placeholder:text-gray-400 focus:ring-4 ring-primary/10 outline-none transition-all" />
-          <textarea placeholder="Съобщение" rows="6" class="w-full bg-primary/5 border border-primary/10 rounded-[1.5rem] p-6 placeholder:text-gray-400 focus:ring-4 ring-primary/10 outline-none resize-none transition-all"></textarea>
-          
+          <input
+            type="text"
+            placeholder="Име"
+            class="w-full bg-primary/5 border border-primary/10 rounded-[1.5rem] p-6 placeholder:text-gray-400 focus:ring-4 ring-primary/10 outline-none transition-all"
+          />
+          <input
+            type="email"
+            placeholder="Имейл адрес"
+            class="w-full bg-primary/5 border border-primary/10 rounded-[1.5rem] p-6 placeholder:text-gray-400 focus:ring-4 ring-primary/10 outline-none transition-all"
+          />
+          <input
+            type="tel"
+            placeholder="Тел. номер"
+            class="w-full bg-primary/5 border border-primary/10 rounded-[1.5rem] p-6 placeholder:text-gray-400 focus:ring-4 ring-primary/10 outline-none transition-all"
+          />
+          <textarea
+            placeholder="Съобщение"
+            rows="6"
+            class="w-full bg-primary/5 border border-primary/10 rounded-[1.5rem] p-6 placeholder:text-gray-400 focus:ring-4 ring-primary/10 outline-none resize-none transition-all"
+          ></textarea>
+
           <div class="flex items-center gap-3 py-4 px-2">
-            <input type="checkbox" id="marketing" class="w-5 h-5 rounded-lg border-2 border-primary/20 bg-white text-primary focus:ring-primary/20 transition-all appearance-none checked:bg-primary checked:border-transparent cursor-pointer" />
-            <label for="marketing" class="text-[13px] text-gray-500 cursor-pointer">Съгласен съм да получавам маркетингови съобщения</label>
+            <input
+              type="checkbox"
+              id="marketing"
+              class="w-5 h-5 rounded-lg border-2 border-primary/20 bg-white text-primary focus:ring-primary/20 transition-all appearance-none checked:bg-primary checked:border-transparent cursor-pointer"
+            />
+            <label
+              for="marketing"
+              class="text-[13px] text-gray-500 cursor-pointer"
+              >Съгласен съм да получавам маркетингови съобщения</label
+            >
           </div>
-          
-          <button class="w-full md:w-auto bg-primary text-white px-20 py-6 rounded-full font-bold shadow-2xl shadow-primary/30 active:scale-95 transition-all hover:brightness-110">Изпратете</button>
+
+          <button
+            class="w-full md:w-auto bg-primary text-white px-20 py-6 rounded-full font-bold shadow-2xl shadow-primary/30 active:scale-95 transition-all hover:brightness-110"
+          >
+            Изпратете
+          </button>
         </div>
 
         <div class="flex-1 space-y-12">
           <p class="text-gray-500 text-base leading-relaxed">
-            Създадено за хора, които държат на правилния език — Граматик е твоят интелигентен помощник за правопис, граматика и стил.
+            Създадено за хора, които държат на правилния език — Граматик е твоят
+            интелигентен помощник за правопис, граматика и стил.
           </p>
-          
-          <div class="rounded-[3rem] overflow-hidden shadow-2xl transition-transform duration-700 hover:scale-[1.02]">
+
+          <div
+            class="rounded-[3rem] overflow-hidden shadow-2xl transition-transform duration-700 hover:scale-[1.02]"
+          >
             <img src="assets/children.png" alt="Impact" class="w-full h-auto" />
           </div>
 
           <div class="grid grid-cols-1 sm:grid-cols-2 gap-8">
             <div class="flex items-center gap-5 text-gray-600 group">
-              <div class="p-3.5 rounded-2xl bg-primary/5 group-hover:bg-primary/10 transition-colors">
-                <ion-icon name="location-outline" class="text-primary text-2xl"></ion-icon>
+              <div
+                class="p-3.5 rounded-2xl bg-primary/5 group-hover:bg-primary/10 transition-colors"
+              >
+                <ion-icon
+                  name="location-outline"
+                  class="text-primary text-2xl"
+                ></ion-icon>
               </div>
               <span class="text-sm font-bold">София, България</span>
             </div>
             <div class="flex items-center gap-5 text-gray-600 group">
-              <div class="p-3.5 rounded-2xl bg-primary/5 group-hover:bg-primary/10 transition-colors">
-                <ion-icon name="call-outline" class="text-primary text-2xl"></ion-icon>
+              <div
+                class="p-3.5 rounded-2xl bg-primary/5 group-hover:bg-primary/10 transition-colors"
+              >
+                <ion-icon
+                  name="call-outline"
+                  class="text-primary text-2xl"
+                ></ion-icon>
               </div>
               <span class="text-sm font-bold">0877354739</span>
             </div>
             <div class="flex items-center gap-5 text-gray-600 group">
-              <div class="p-3.5 rounded-2xl bg-primary/5 group-hover:bg-primary/10 transition-colors">
-                <ion-icon name="mail-outline" class="text-primary text-2xl"></ion-icon>
+              <div
+                class="p-3.5 rounded-2xl bg-primary/5 group-hover:bg-primary/10 transition-colors"
+              >
+                <ion-icon
+                  name="mail-outline"
+                  class="text-primary text-2xl"
+                ></ion-icon>
               </div>
               <span class="text-sm font-bold">office@gramatic.com</span>
             </div>
           </div>
 
           <div class="flex gap-8 pt-4">
-            <ion-icon name="logo-instagram" class="text-2xl text-gray-400 hover:text-primary transition-all cursor-pointer hover:scale-125"></ion-icon>
-            <ion-icon name="logo-twitter" class="text-2xl text-gray-400 hover:text-primary transition-all cursor-pointer hover:scale-125"></ion-icon>
-            <ion-icon name="logo-facebook" class="text-2xl text-gray-400 hover:text-primary transition-all cursor-pointer hover:scale-125"></ion-icon>
-            <ion-icon name="logo-youtube" class="text-2xl text-gray-400 hover:text-primary transition-all cursor-pointer hover:scale-125"></ion-icon>
+            <ion-icon
+              name="logo-instagram"
+              class="text-2xl text-gray-400 hover:text-primary transition-all cursor-pointer hover:scale-125"
+            ></ion-icon>
+            <ion-icon
+              name="logo-twitter"
+              class="text-2xl text-gray-400 hover:text-primary transition-all cursor-pointer hover:scale-125"
+            ></ion-icon>
+            <ion-icon
+              name="logo-facebook"
+              class="text-2xl text-gray-400 hover:text-primary transition-all cursor-pointer hover:scale-125"
+            ></ion-icon>
+            <ion-icon
+              name="logo-youtube"
+              class="text-2xl text-gray-400 hover:text-primary transition-all cursor-pointer hover:scale-125"
+            ></ion-icon>
           </div>
         </div>
       </div>
     </div>
 
     <footer class="bg-bg-footer/50 backdrop-blur-md pt-16 pb-8 mt-16">
-      <div class="px-6 grid grid-cols-1 md:grid-cols-4 gap-16 border-b border-primary/5 pb-12 max-w-6xl mx-auto">
+      <div
+        class="px-6 grid grid-cols-1 md:grid-cols-4 gap-16 border-b border-primary/5 pb-12 max-w-6xl mx-auto"
+      >
         <div class="space-y-6">
           <div class="flex flex-col gap-4">
             <div class="flex items-center gap-3">
               <img src="assets/logo.svg" class="w-10 h-10" alt="Logo" />
-              <span class="text-3xl font-bold text-primary font-cursive">Граматик</span>
+              <span class="text-3xl font-bold text-primary font-cursive"
+                >Граматик</span
+              >
             </div>
-            <img src="assets/logo.svg" class="w-16 h-10 opacity-10" alt="Decoration" />
+            <img
+              src="assets/logo.svg"
+              class="w-16 h-10 opacity-10"
+              alt="Decoration"
+            />
           </div>
           <div class="space-y-3">
-            <p class="text-[9px] uppercase font-bold text-gray-400 tracking-[0.2em]">Свалете приложението:</p>
+            <p
+              class="text-[9px] uppercase font-bold text-gray-400 tracking-[0.2em]"
+            >
+              Свалете приложението:
+            </p>
             <div class="flex flex-row gap-2">
-              <button class="bg-black text-white px-3 py-2 rounded-lg flex items-center gap-2 transition-all hover:scale-105 shadow-md shadow-black/10">
-                <ion-icon name="logo-google-playstore" class="text-xl"></ion-icon>
+              <button
+                class="bg-black text-white px-3 py-2 rounded-lg flex items-center gap-2 transition-all hover:scale-105 shadow-md shadow-black/10"
+              >
+                <ion-icon
+                  name="logo-google-playstore"
+                  class="text-xl"
+                ></ion-icon>
                 <div class="text-left">
-                  <div class="text-[6px] uppercase leading-none opacity-60">Get it on</div>
-                  <div class="text-[10px] font-bold leading-none">Google Play</div>
+                  <div class="text-[6px] uppercase leading-none opacity-60">
+                    Get it on
+                  </div>
+                  <div class="text-[10px] font-bold leading-none">
+                    Google Play
+                  </div>
                 </div>
               </button>
-              <button class="bg-black text-white px-3 py-2 rounded-lg flex items-center gap-2 transition-all hover:scale-105 shadow-md shadow-black/10">
+              <button
+                class="bg-black text-white px-3 py-2 rounded-lg flex items-center gap-2 transition-all hover:scale-105 shadow-md shadow-black/10"
+              >
                 <ion-icon name="logo-apple" class="text-xl"></ion-icon>
                 <div class="text-left">
-                  <div class="text-[6px] uppercase leading-none opacity-60">Download on the</div>
-                  <div class="text-[10px] font-bold leading-none">App Store</div>
+                  <div class="text-[6px] uppercase leading-none opacity-60">
+                    Download on the
+                  </div>
+                  <div class="text-[10px] font-bold leading-none">
+                    App Store
+                  </div>
                 </div>
               </button>
             </div>
@@ -325,10 +601,18 @@
             <div class="w-6 h-[2px] bg-primary/20"></div>
           </h4>
           <ul class="space-y-4 text-[13px] font-bold text-gray-500">
-            <li class="hover:text-primary cursor-pointer transition-colors">За Граматик</li>
-            <li class="hover:text-primary cursor-pointer transition-colors">Абонаментни планове</li>
-            <li class="hover:text-primary cursor-pointer transition-colors">Общи условия</li>
-            <li class="hover:text-primary cursor-pointer transition-colors">Политика за поверителност</li>
+            <li class="hover:text-primary cursor-pointer transition-colors">
+              За Граматик
+            </li>
+            <li class="hover:text-primary cursor-pointer transition-colors">
+              Абонаментни планове
+            </li>
+            <li class="hover:text-primary cursor-pointer transition-colors">
+              Общи условия
+            </li>
+            <li class="hover:text-primary cursor-pointer transition-colors">
+              Политика за поверителност
+            </li>
           </ul>
         </div>
 
@@ -338,31 +622,62 @@
             <div class="w-6 h-[2px] bg-primary/20"></div>
           </h4>
           <div class="space-y-6">
-            <div class="flex items-center gap-4 text-[13px] font-bold text-gray-500">
-              <ion-icon name="location-outline" class="text-primary text-xl"></ion-icon>
+            <div
+              class="flex items-center gap-4 text-[13px] font-bold text-gray-500"
+            >
+              <ion-icon
+                name="location-outline"
+                class="text-primary text-xl"
+              ></ion-icon>
               <span>София, България</span>
             </div>
-            <div class="flex items-center gap-4 text-[13px] font-bold text-gray-500">
-              <ion-icon name="call-outline" class="text-primary text-xl"></ion-icon>
+            <div
+              class="flex items-center gap-4 text-[13px] font-bold text-gray-500"
+            >
+              <ion-icon
+                name="call-outline"
+                class="text-primary text-xl"
+              ></ion-icon>
               <span>0877354739</span>
             </div>
-            <div class="flex items-center gap-4 text-[13px] font-bold text-gray-500">
-              <ion-icon name="mail-outline" class="text-primary text-xl"></ion-icon>
+            <div
+              class="flex items-center gap-4 text-[13px] font-bold text-gray-500"
+            >
+              <ion-icon
+                name="mail-outline"
+                class="text-primary text-xl"
+              ></ion-icon>
               <span>office@gramatic.com</span>
             </div>
           </div>
         </div>
 
-        <div class="flex flex-col items-center md:items-end justify-between py-2">
+        <div
+          class="flex flex-col items-center md:items-end justify-between py-2"
+        >
           <div class="flex gap-5">
-            <ion-icon name="logo-instagram" class="text-2xl text-gray-400 hover:text-primary transition-all cursor-pointer"></ion-icon>
-            <ion-icon name="logo-twitter" class="text-2xl text-gray-400 hover:text-primary transition-all cursor-pointer"></ion-icon>
-            <ion-icon name="logo-facebook" class="text-2xl text-gray-400 hover:text-primary transition-all cursor-pointer"></ion-icon>
-            <ion-icon name="logo-youtube" class="text-2xl text-gray-400 hover:text-primary transition-all cursor-pointer"></ion-icon>
+            <ion-icon
+              name="logo-instagram"
+              class="text-2xl text-gray-400 hover:text-primary transition-all cursor-pointer"
+            ></ion-icon>
+            <ion-icon
+              name="logo-twitter"
+              class="text-2xl text-gray-400 hover:text-primary transition-all cursor-pointer"
+            ></ion-icon>
+            <ion-icon
+              name="logo-facebook"
+              class="text-2xl text-gray-400 hover:text-primary transition-all cursor-pointer"
+            ></ion-icon>
+            <ion-icon
+              name="logo-youtube"
+              class="text-2xl text-gray-400 hover:text-primary transition-all cursor-pointer"
+            ></ion-icon>
           </div>
         </div>
       </div>
-      <div class="px-6 py-10 text-center text-[10px] text-gray-400 uppercase tracking-[0.4em] font-bold">
+      <div
+        class="px-6 py-10 text-center text-[10px] text-gray-400 uppercase tracking-[0.4em] font-bold"
+      >
         © 2024 ГРАМАТИК. ВСИЧКИ ПРАВА ЗАПАЗЕНИ.
       </div>
     </footer>
